@@ -22,7 +22,7 @@ button#back {
     transition: transform 0.2s ease, background-color 0.3s ease lightblue;
     position: absolute;
     display: flex;
-    margin-left: 0;
+    margin-left: 3em;
     left: 0;
 }
 #back:hover {
