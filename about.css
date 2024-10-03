@@ -23,7 +23,7 @@ button#back {
     position: absolute;
     display: flex;
     margin-left: 3em;
-    left: 0;
+    left: 4;
 }
 #back:hover {
   background-color: #D2DFF5;
