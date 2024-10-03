@@ -433,10 +433,13 @@ searchBar.addEventListener("click", function () {
   searchBar.style.background = "#fff";
   searchBar.style.color = "#000";
 });
-// Toggle dark mode
+
+//dark mode
+// Toggle dark mode and change table head background color
 const moon = document
   .getElementById("theme-moon")
   .addEventListener("click", function () {
+    // Toggle various classes for dark mode
     document.querySelector(".main-content").classList.toggle("change-mode");
     document.body.classList.toggle("change");
     document.querySelector(".header").classList.toggle("header-mode");
@@ -449,19 +452,21 @@ const moon = document
     document.getElementById("side-b").classList.toggle("siden-mode");
     document.getElementById("side-c").classList.toggle("siden-mode");
     document.getElementById("theme-moon").classList.toggle("bit");
-    document.querySelectorAll(".h2Color").classList.toggle("h2Color");
-    document.getElementById("contacts-table").classList.toggle("Table");
-    document.getElementsByTagName("th").classList.toggle("Thead");
+
+    // Target the table head (thead) and toggle dark mode class
+    const tableHead = document.querySelector("#contacts-table thead");
+    tableHead.classList.toggle("thead-dark");
   });
-// let contactsTable = document.querySelectorAll(".trow");
-// contactsTable.style.background = "#121212";
 
 // Applying styles for dark mode
 const css = `
-.change .bit{
+/* Dark Mode Styles */
+
+.change .bit {
   background-color: #121212;
 }
-.change .header-mode{
+
+.change .header-mode {
   background-color: #121212;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
@@ -471,14 +476,8 @@ const css = `
   opacity: 0.85;
   color: #e8f0fe;
 }
-  
-.change .siden-mode{
-  color: #fff;
-}
-Table Thead{
-background-color: #121212;
-}
-.change .h2Color{
+
+.change .siden-mode {
   color: #fff;
 }
 
@@ -486,22 +485,19 @@ background-color: #121212;
   background-color: #121212;
 }
 
-.change .sidebtn-mode{
-  color: #fff;
-}
-
-.change  .input-mode{
+.change .input-mode {
   padding: 0.6rem;
   margin-right: 10em;
   width: 40em;
   border: none;
   border-radius: 30px;
   outline: none;
-  // background-color: #f1f3f4;
+  background-color: #f1f3f4;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
- .change{
-  background: linear-gradient(135deg, #121212  10%,  #4f4f5749 100%),
+
+.change {
+  background: linear-gradient(135deg, #121212 10%, #4f4f5749 100%),
     url("Untitled.jpeg");
   background-size: cover;
   background-position: right center;
@@ -509,11 +505,13 @@ background-color: #121212;
   background-blend-mode: overlay;
   color: white;
 }
+
 .change-mode.main-content {
- background-color: darkgrey;
- color: white;
- opacity: 0.9;
+  background-color: darkgrey;
+  color: white;
+  opacity: 0.85;
 }
+
 .change-mode button {
   background-color: #121212;
   color: white;
@@ -524,7 +522,14 @@ background-color: #121212;
   margin-bottom: 1rem;
   margin-right: 40px;
   float: right;
-}`;
+}
+
+/* Dark Mode for Table Header */
+.thead-dark {
+  background-color: #000;  /* Black background for table head */
+  color: white;            /* White text in the table head */
+}
+`;
 const searchB = document.getElementById("search");
 const name = document.getElementById("fullName");
 const email = document.getElementById("email");
@@ -560,6 +565,6 @@ document.head.appendChild(style);
 //Get back to Home-page
 document.querySelector(".logo").addEventListener("click", () => {
   setTimeout(() => {
-    window.location.href = "index.html";
+    window.location.href = "landpage.html";
   }, 1000);
 });
