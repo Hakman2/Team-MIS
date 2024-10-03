@@ -21,7 +21,8 @@ button#back {
     cursor: pointer;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
     transition: transform 0.2s ease, background-color 0.3s ease lightblue;
-    margin: 2em;
+    margin-top: 2em ;
+    margin-left: 0;
 }
 #back:hover {
   background-color: #D2DFF5;
