@@ -103,6 +103,10 @@ button#sign:hover {
   margin-bottom: 20px;
 }
 
+#link{
+  text-decoration: none;
+  color: #fff;
+}
 #img {
   border-radius: 50%;
   width: 80px;
