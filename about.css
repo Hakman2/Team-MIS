@@ -4,12 +4,32 @@
     box-sizing: border-box;
     font-family: 'Roboto',sans-serif;
 }
+
 body{
     background-color: lightblue;
     background-position: 20px;
     background-size: contain;
     background-repeat: no-repeat;
     line-height: 1.2;
+    justify-content: center;
+    text-align: center;
+}
+button#back {
+    border: none;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease, background-color 0.3s ease lightblue;
+    position: absolute;
+    display: flex;
+    margin-left: 4em;
+    left: 0;
+}
+#back:hover {
+  background-color: #D2DFF5;
+  color: #1A73E8;
+  transform: translateY(-5px);
 }
 .heading{
     width: 90%;
