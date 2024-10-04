@@ -3,73 +3,84 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MIS Contact</title>
-    <link rel="stylesheet" href="landpage.css" />
+    <title>Login or Sign up to MIS Contact</title>
+    <link rel="stylesheet" href="Registers.css" />
   </head>
   <body>
-    <div class="navigation">
-      <div class="badge">
-        <h1>MIS Contact</h1>
-      </div>
-      <div class="nav">
-        <button id="about">About</button>
-      </div>
-    </div>
+    <h1>MIS <span id="orange">Contact</span></h1>
+    <!-- Main Content on the logs -->
     <div class="container">
-      <!--Header and others-->
-      <center>
-        <header>
-          <h1 class="welcome-text">Welcome to MIS Contact Hub</h1>
+      <!-- Sign-up Section -->
+      <div class="sign-up">
+        <h2>Sign Up</h2>
+        <form class="sign-up-form">
+          <input type="text" placeholder="| Full Name" id="fullname" required />
+          <br />
+          <input type="email" placeholder="| Email" id="email" required />
+          <br />
+          <input
+            type="password"
+            placeholder="| Password"
+            id="sign_password"
+            required
+          />
+          <input
+            type="password"
+            placeholder="| Confirm Password"
+            id="con_password"
+            required
+          />
+          <br />
+          <button type="submit">Sign up</button>
+        </form>
+      </div>
 
-          <p>
-            Our goal is to make contact management smooth and intuitive. Start
-            organizing your contact list today!
-          </p>
+      <!-- Login Section -->
+      <div class="login">
+        <div class="log">
+          <h2>Login</h2>
+          <form class="log-in">
+            <label for="username">
+              <input
+                type="text"
+                placeholder="| Username"
+                id="username"
+                required
+              />
+            </label>
+            <br />
+            <label for="pwd">
+              <input
+                type="password"
+                placeholder="| Password"
+                id="pwdl"
+                required
+              />
+            </label>
+            <br />
 
-          <p>
-            We’re excited to help you effortlessly manage your contacts. On our
-            platform, you can:
-          </p>
-          <br />
-          <br />
-          <button type="button" class="start">Get Started</button>
-          <br />
-          <div class="column">
-            <div class="column_1">
-              <p>Add new contacts easily.</p>
-            </div>
-            <div class="column_2">
-              <p>Delete outdated contacts quickly.</p>
-            </div>
-            <div class="column_3">
-              <p>Change mode.</p>
-            </div>
-          </div>
-        </header>
-      </center>
-      <footer class="foot">
-        <p>© 2024 MIS Contact. All Rights Reserved.</p>
-        <p>
-          <a href="policy.html">Privacy Policy</a> |
-          <a href="terms.html">Terms of Service</a>
-        </p>
-      </footer>
+            <label for="check">
+              <input type="checkbox" id="checkbox" /> Remember me
+            </label>
+            <br />
+            <br />
+            <label for="link">
+              <a href="#">Forgot your password?</a>
+            </label>
+            <br />
+            <br />
+
+            <button id="login" type="submit">Login</button>
+          </form>
+        </div>
+      </div>
     </div>
-    <script>
-      const about = document.getElementById("about");
-      const getStart = document.querySelector(".start");
 
-      about.addEventListener("click", () => {
-        setTimeout(() => {
-          window.location.href = "about.html";
-        }, 2000);
-      });
-
-      getStart.addEventListener("click", () => {
-        setTimeout(() => {
-          window.location.href = "gr.html";
-        }, 2000);
-      });
-    </script>
+    <!-- Footer -->
+    <footer>
+      <p>© 2024 MIS Contact Hub. All Rights Reserved.</p>
+      <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+    <script src="Registers.js"></script>
   </body>
 </html>
