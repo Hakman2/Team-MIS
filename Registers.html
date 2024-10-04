@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login or Sign up to MIS Contact</title>
+    <link rel="stylesheet" href="Registers.css" />
+  </head>
+  <body>
+    <h1>MIS <span id="orange">Contact</span></h1>
+    <!-- Main Content on the logs -->
+    <div class="container">
+      <!-- Sign-up Section -->
+      <div class="sign-up">
+        <h2>Sign Up</h2>
+        <form class="sign-up-form">
+          <input type="text" placeholder="| Full Name" id="fullname" required />
+          <br />
+          <input type="email" placeholder="| Email" id="email" required />
+          <br />
+          <input
+            type="password"
+            placeholder="| Password"
+            id="sign_password"
+            required
+          />
+          <input
+            type="password"
+            placeholder="| Confirm Password"
+            id="con_password"
+            required
+          />
+          <br />
+          <button type="submit">Sign up</button>
+        </form>
+      </div>
+
+      <!-- Login Section -->
+      <div class="login">
+        <div class="log">
+          <h2>Login</h2>
+          <form class="log-in">
+            <label for="username">
+              <input
+                type="text"
+                placeholder="| Username"
+                id="username"
+                required
+              />
+            </label>
+            <br />
+            <label for="pwd">
+              <input
+                type="password"
+                placeholder="| Password"
+                id="pwdl"
+                required
+              />
+            </label>
+            <br />
+
+            <label for="check">
+              <input type="checkbox" id="checkbox" /> Remember me
+            </label>
+            <br />
+            <br />
+            <label for="link">
+              <a href="#">Forgot your password?</a>
+            </label>
+            <br />
+            <br />
+
+            <button id="login" type="submit">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2024 MIS Contact Hub. All Rights Reserved.</p>
+      <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+    <script src="Registers.js"></script>
+  </body>
+</html>
