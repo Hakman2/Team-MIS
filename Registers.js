@@ -31,7 +31,7 @@ formk.addEventListener("submit", (e) => {
   alert("Thank you");
 
   setTimeout(() => {
-    window.location.href = "index.html";
+    window.location.href = "landpage.html";
   }, 2000);
 });
 // Login Form Submission
@@ -54,6 +54,6 @@ forml.addEventListener("submit", (k) => {
 
   // Redirect to another page on successful login
   setTimeout(() => {
-    window.location.href = "index.html";
+    window.location.href = "landpage.html";
   }, 2000);
 });
