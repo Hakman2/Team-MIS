@@ -31,6 +31,7 @@ button#back {
   color: #1A73E8;
   transform: translateY(-5px);
 }
+   
 .heading{
     width: 90%;
     display: flex;
@@ -38,17 +39,18 @@ button#back {
     align-items: center;
     text-align: center;
     flex-direction: column;
-    margin: 20px auto;
+    margin: 20px;
+    margin-top: 50px;
 }
 .heading h1{
-    font-size: 35px;
-    color: #000;
-    margin-bottom: 25px;
+    font-size: 25px;
+    color: #080808;
+    margin-bottom: 10px;
     position: relativee
 }
 .heading p{
     font-size: 16px;
-    color: #666;
+    color: hsla(0, 0%, 8%, 0.363);
     margin-bottom: 25px; 
 }
 .container{
@@ -68,11 +70,11 @@ button#back {
     overflow: hidden;
 }
 .about-image img{
-    width: 95%;
-    height: auto;
+    width: 90%;
+    height: 45%;
     display: flex;
-    transition: 0.5s ease;
-    margin-top: 50px;
+    transition: 0.1s ease;
+    margin-top: 30px;
 }
 .about-image:hover img{
     transform: scale(1.1);
@@ -81,13 +83,13 @@ button#back {
     flex: 1;
 }
 .about-content h2{
-    font-size: 35px;
+    font-size: 25px;
     margin-top: 6px;
-    color: #333;
+    color: #111111;
 }
 .about-content p{
     font-size: 25px;
-    color: #000;
+    color: #111111;
     margin-right: 30px;
     margin-bottom: 20px;
     margin-top:30px ;
@@ -98,10 +100,10 @@ button#back {
         padding: 0px 20px;
     }
     .heading h1{
-        font-size: 40px;
+        font-size: 25px;
     }
     .heading p{
-        font-size: 12px;
+        font-size: 25px;
         margin-right: 0px;
     }
     .container{
@@ -112,12 +114,12 @@ button#back {
         flex-direction: column;
     }
     .about-image{
-        margin-right: 20px;
+        margin-right: 50px;
         margin-bottom: 0px;
     }
     .about-content p{
         padding: 0px;
-        font-size: 16px;
+        font-size: 25px;
     } 
     
 }
