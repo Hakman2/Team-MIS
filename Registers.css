@@ -69,6 +69,10 @@ h1 {
   color: lightgray;
 }
 
+#link{
+  text-decoration: none;
+  color: #fff;
+}
 button#sign {
   border: none;
   background-color: #264370;
